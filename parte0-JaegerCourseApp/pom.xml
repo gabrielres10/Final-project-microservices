@@ -51,51 +51,47 @@
 		</dependency>
 
 		<dependency>
-			<groupId>io.opentelemetry</groupId>	
+			<groupId>io.opentelemetry</groupId>
 			<artifactId>opentelemetry-api</artifactId>
 		</dependency>
-
 		<dependency>
 			<groupId>io.opentelemetry</groupId>
 			<artifactId>opentelemetry-sdk</artifactId>
 		</dependency>
-
 		<dependency>
 			<groupId>io.opentelemetry</groupId>
 			<artifactId>opentelemetry-exporter-otlp</artifactId>
 		</dependency>
-
 		<dependency>
 			<groupId>io.opentelemetry.semconv</groupId>
 			<artifactId>opentelemetry-semconv</artifactId>
 			<version>1.21.0-alpha</version>
 		</dependency>
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
-
 		<dependency>
 			<groupId>io.micrometer</groupId>
 			<artifactId>micrometer-registry-prometheus</artifactId>
 		</dependency>
-
 		<dependency>
 			<groupId>io.opentelemetry.instrumentation</groupId>
 			<artifactId>opentelemetry-logback-appender-1.0</artifactId>
 			<version>1.31.0-alpha</version>
 		</dependency>
-
 		<dependency>
 			<groupId>io.opentelemetry.instrumentation</groupId>
 			<artifactId>opentelemetry-spring-boot-starter</artifactId>
 			<version>1.31.0-alpha</version>
 		</dependency>
-
 		<dependency>
 			<groupId>io.micrometer</groupId>
 			<artifactId>micrometer-registry-otlp</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>io.opentelemetry</groupId>
+			<artifactId>opentelemetry-exporter-otlp</artifactId>
 		</dependency>
 	</dependencies>
 
@@ -111,9 +107,9 @@
 
 			<!-- OpenTelemetry -->
 			<dependency>
-				<groupId>io.opentelemetry.instrumentation</groupId>
-				<artifactId>opentelemetry-instrumentation-bom</artifactId>
-				<version>2.6.0</version>
+				<groupId>io.opentelemetry</groupId>
+				<artifactId>opentelemetry-bom</artifactId>
+				<version>1.43.0</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
