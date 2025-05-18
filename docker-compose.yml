@@ -61,3 +61,10 @@ services:
     image: grafana/grafana:8.1.2
     ports:
       - "3000:3000"
+
+  mysql:
+    image: mysql:8.0
+    ports:
+     - "3306:3306"
+    volumes:
+     - /var/lib/mysql
