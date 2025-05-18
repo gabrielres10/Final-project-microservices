@@ -68,8 +68,8 @@ services:
     ports:
       - "3306:3306"
     environment:
-      MYSQL_ROOT_PASSWORD: rootpassword
-      MYSQL_DATABASE: mydb
+      MYSQL_ROOT_PASSWORD: techbankRootPsw
+      MYSQL_DATABASE: futurex_course_db
     volumes:
       - mysql-data:/var/lib/mysql
 

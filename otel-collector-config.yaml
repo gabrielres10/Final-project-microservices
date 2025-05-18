@@ -40,4 +40,4 @@ service:
       exporters: [file, logging] # Exportar logs a archivo y Logging para depuración
   telemetry:
     logs:
-    level: "debug"
+      level: "debug"
