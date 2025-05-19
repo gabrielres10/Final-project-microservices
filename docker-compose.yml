@@ -6,7 +6,7 @@ services:
       - "16686:16686"   # Web UI
       - "14250:14250"   # gRPC for Jaeger-to-Jaeger communication
       - "4317:4317"     # OTLP gRPC receiver
-      - "4318:4318"     # OTLP HTTP receiver
+      - "4320:4318"     # OTLP HTTP receiver
     environment:
       - COLLECTOR_OTLP_ENABLED=true
 
@@ -18,7 +18,7 @@ services:
       - ./logs:/var/log
     ports:
       - "4319:4317"
-      - "4320:4318"
+      - "4318:4318"
       - "8889:8889"
     depends_on:
       - jaeger
